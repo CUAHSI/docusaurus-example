@@ -6,8 +6,8 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
+  title: 'CUAHSI Documentation Portal',
+  tagline: 'All the water docs',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
@@ -66,12 +66,18 @@ const config = {
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
-        title: 'My Site',
+        title: 'CUAHSI Documentation Portal',
         logo: {
           alt: 'My Site Logo',
           src: 'img/logo.svg',
         },
         items: [
+          {
+            type: 'docSidebar',
+            sidebarId: 'czSidebar',
+            position: 'left',
+            label: 'CZ Data Best Practices',
+          },
           {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
@@ -80,7 +86,7 @@ const config = {
           },
           {to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: 'https://github.com/facebook/docusaurus',
+            href: 'https://github.com/CUAHSI/docusaurus-example',
             label: 'GitHub',
             position: 'right',
           },
@@ -124,7 +130,7 @@ const config = {
               },
               {
                 label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                href: 'https://github.com/CUAHSI/docusaurus-example',
               },
             ],
           },
